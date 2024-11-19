@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- landing page -->
+     <section class="landing-page">
+
+        <div class="wrapper">
+            <div class="flex-content">
+                <h1 class="vacation-heading">
+                    Welcome to master Quiz
+                </h1>
+                <a href="#quiz-packages" class="btn">Start Now</a>
+            </div>
+        </div>
+     </section>
+
+   <!-- header-section -->
+    <header class="quiz-header" id="quiz-header">
+        <h1 class="heading">Master Quiz</h1>
+    </header>
+
+    <nav class="main-nav">
+        <a href="#">Home</a>
+        <a href="#quiz-packages">Quiz</a>
+        <a href="#Performer">Top Performers</a>
+        <a href="#notes">Notes</a>
+    </nav>
+
+    <section class="quiz-packages-section" id="quiz-packages">
+        <h1 class="quiz-heading">Coding Quiz</h1>
+        <p class="quiz-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit obcaecati harum consectetur labore alias, iste laborum iusto facere ducimus minima molestias. Dicta ullam consequuntur, perferendis sequi illum atque officia modi saepe, distinctio est culpa voluptatum fugit nulla, mollitia asperiores. Omnis, illum esse quod beatae, animi tempore labore ut optio ipsa, nesciunt aspernatur sint debitis? Nisi laboriosam suscipit esse, laudantium consectetur praesentium possimus rerum modi hic numquam minus soluta reprehenderit perspiciatis aut molestiae, incidunt sequi et ut animi aliquid dolorum officia. Eaque doloribus rerum dolorum tenetur nulla dolores vel provident iusto consectetur? Possimus eaque repellat porro similique, praesentium cupiditate inventore facere.</p>
+        <div class="package-wrapper">
+            <div class="package-card">
+                <img src="./images/java.jpg" alt="Java Course img">
+                <p class="card-heading">Java</p>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, totam?</p>
+                <p class="card-heading">Rs.400</p>
+                <button class="btn" onclick="startQuiz('java')"> Take Quiz</button>
+            </div>
+
+            <div class="package-card">
+                <img src="./images/python.jpg" alt="Java Course img">
+                <p class="card-heading">Python</p>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, totam?</p>
+                <p class="card-heading">Rs.400</p>
+                <button class="btn" onclick="startQuiz('python')"> Take Quiz</button>
+            </div>
+            <div class="package-card">
+                <img src="./images/js.png" alt="Java Course img">
+                <p class="card-heading">Javascript</p>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, totam?</p>
+                <p class="card-heading">Rs.400</p>
+                <button class="btn" onclick="startQuiz('javascript')"> Take Quiz</button>
+            </div>
+
+            <div class="package-card">
+                <img src="./images/compiler.png" alt="Java Course img">
+                <p class="card-heading">Compiler Design</p>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, totam?</p>
+                <p class="card-heading">Rs.400</p>
+                <button class="btn" onclick="startQuiz('compilier')"> Take Quiz</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="Performer-quiz-section" id="Performer">
+        <h1 class="quiz-heading">Top Performers</h1>
+        <p class="quiz-text">Our top performers are the brightest minds who have consistently excelled in our quizzes, showcasing their expertise and dedication. They represent the pinnacle of knowledge across various subjects like Java, Python, and more. With impressive scores, they set the benchmark for others to follow and inspire the entire community to strive for excellence</p>
+
+        <div class="image-card">
+            <img src="https://images.unsplash.com/photo-1592085550638-e6bc180a731e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sbGVnZSUyMHN0dWRlbnR8ZW58MHx8MHx8fDA%3D" alt="">
+            <img src="https://images.unsplash.com/photo-1592085549957-ca20be013d96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbGxlZ2UlMjBzdHVkZW50fGVufDB8fDB8fHww" alt="">
+            <img src="https://images.unsplash.com/photo-1604177091072-b7b677a077f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvbGxlZ2UlMjBzdHVkZW50fGVufDB8fDB8fHww" alt="">
+            <img src="https://images.unsplash.com/photo-1609402122820-9cb32081a555?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvbGxlZ2UlMjBzdHVkZW50fGVufDB8fDB8fHww" alt="">
+            <img src="https://images.unsplash.com/photo-1594686948539-2709857f7066?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbGxlZ2UlMjBzdHVkZW50fGVufDB8fDB8fHww" alt="">
+            <img src="https://images.unsplash.com/photo-1620663823969-631e014e5e97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29sbGVnZSUyMHN0dWRlbnR8ZW58MHx8MHx8fDA%3D" alt="">
+        </div>
+    </section>
+
+    <section class="notes-section" id="notes">
+        <h1 class="quiz-heading">Subject Notes</h1>
+        <p class="quiz-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quae culpa voluptatum sed. Necessitatibus eveniet quas harum praesentium aspernatur temporibus.</p>
+
+        <div class="notes-div">
+            <div class="notes-wrapper">
+                <img src="./images/java.png" alt="">
+            </div>
+            <div class="notes-wrapper">
+                <img src="./images/compiler.png" alt="">
+            </div>
+            <div class="notes-wrapper">
+                <img src="./images/dev.jpg" alt="">
+            </div>
+            <div class="notes-wrapper">
+                <img src="./images/python.jpg" alt="">
+            </div>
+            <div class="notes-wrapper">
+                <img src="./images/react.png" alt="">
+            </div>
+            <div class="notes-wrapper">
+                <img src="./images/spring.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <small>All Right Reserved....</small> 
+        <small>Developed and maintained by Dipankar Sethi</small>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>

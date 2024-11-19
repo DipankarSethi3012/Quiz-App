@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+.landing-page{
+    background: url(./images/bg1.jpg);
+    height: 100vh;
+    background-size: cover;
+    color: wheat;
+}
+.landing-page .wrapper{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+.landing-page .flex-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.landing-page .vacation-heading{
+    font-size: 50px;
+}
+.btn{
+    color: white;
+    text-decoration: none;
+    background-color: teal;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+}
+.btn:hover{
+    background-color: blue;
+}
+.btn::before{
+    background-color: #a0dd13;
+}
+.btn::after{
+    background-color: green;
+}
+.quiz-header{
+    background: radial-gradient(circle at center, #00d2ff, #3a7bd5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.quiz-header .heading{
+    font-size: 60px;
+}
+.main-nav{
+    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 10px black;
+    z-index: 1;
+}
+.main-nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 30px;
+}
+.main-nav a:hover{
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+
+    color: white;
+    border-radius: 10px;
+}
+.quiz-packages-section{
+    text-align: center;
+    margin-top: 40px;
+}
+.quiz-packages-section .quiz-heading{
+    padding-top: 20px;
+}
+.quiz-packages-section .package-wrapper{
+    margin-top: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.package-wrapper .package-card{
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 20px;
+    width: 280px;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+}
+.package-card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+.package-card .card-heading{
+    font-size: 25px;
+}
+.package-card .card-text{
+    font-size: 20px;
+    color: gray;
+    border: 2px solid rgb(153, 150, 150);
+    border-radius: 15px;
+    margin: 10px 0;
+}
+.package-card .btn{
+    border-radius: 40px;
+    box-shadow: 0px 0px 5px gray;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 10px;
+}
+.package-card{
+    transition: transform 0.6s ease-in-out;
+    
+}
+.package-card:hover{
+    box-shadow: 0px 5px 10px 1px black;
+    transform: scale(1.1);
+}
+.quiz-heading{
+    font-size: 90px;
+    color: gray;
+}
+
+.quiz-text{
+    color: gray;
+    text-align: justify;
+    padding: 2px 40px;
+    font-size: 25px;
+}
+
+.Performer-quiz-section{
+    text-align: center;
+    width: 100vw;
+    /* overflow: hidden; */
+}
+.Performer-quiz-section .quiz-heading{
+    padding-top: 60px;
+}
+.Performer-quiz-section .image-card{
+    object-fit: cover;
+}
+.image-card{
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, auto);
+   gap: 20px;
+   padding: 40px;
+}
+.image-card img{
+    width:  100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+.image-card img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.notes-section{
+    text-align: center;
+    padding: 100px;
+}
+.notes-section .notes-div{
+    margin-top: 20px;
+}
+.notes-section .notes-wrapper{
+     border: 2px solid black;
+     width: 300px;
+     height: 200px;
+     overflow: hidden;
+     border-radius: 10px;
+     box-shadow: 0 0 10px gray;
+     display: inline-block;
+     margin: 20px;
+}
+.notes-section .notes-wrapper img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+.notes-section .notes-wrapper img:hover{
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+.footer-section{
+    background-color: rgb(111, 108, 108);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
